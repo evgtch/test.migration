@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:transmogrifier="http://namespaces.plone.org/transmogrifier"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.transmogrifier">
+
+  <include package="collective.transmogrifier"/>
+  <include package="collective.transmogrifier" file="meta.zcml"/>
+
+  <transmogrifier:registerConfig
+    name="test.migration.import_content"
+    title="Import  content"
+    description="This pipeline imports content to single Plone site"
+    configuration="import_content.cfg"
+  />
+</configure>
