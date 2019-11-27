@@ -13,4 +13,11 @@
     description="This pipeline imports content to single Plone site"
     configuration="import_content.cfg"
   />
+  <genericsetup:registerProfile
+    name="default"
+    title="Test Migrator"
+    directory="profiles/default"
+    description="Extension profile for testing migration."
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+  />
 </configure>
