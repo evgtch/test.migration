@@ -6,39 +6,19 @@
 test.migration
 ==============
 
-Tell me what your product does
+Addon for Plone5.1 to get data from Plone4.
 
 Features
 --------
 
-- Can be bullet points
+- Converts data from Archetypes to Dexterity
 
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
 
 
 Installation
 ------------
 
-Install test.migration by adding it to your buildout::
+Install test.migration and dependencies by adding it to your Plone5 buildout::
 
     [buildout]
 
@@ -46,24 +26,13 @@ Install test.migration by adding it to your buildout::
 
     eggs =
         test.migration
+        collective.jsonmigrator
+        transmogrify.dexterity
+        test.migration
 
 
 and then running ``bin/buildout``
 
-
-Contribute
-----------
-
-- Issue Tracker: https://github.com/collective/test.migration/issues
-- Source Code: https://github.com/collective/test.migration
-- Documentation: https://docs.plone.org/foo/bar
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
 
 
 License
